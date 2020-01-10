@@ -14,7 +14,8 @@
         include 'parts/header.php';
         include 'php/logout.php';
         include 'php/visit.php';
-        include 'parts/history.php'; 
+        include 'parts/klantinfo.php'; 
+        include 'parts/history.php';
      ?>
   </body>
 </html>

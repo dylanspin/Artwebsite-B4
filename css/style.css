@@ -4,6 +4,7 @@ body{
   width: 100vw;
   font-family: 'Roboto';
   overflow-x: hidden;
+  padding-bottom: 10vh;
 }
 a{
   color: white;
@@ -145,7 +146,7 @@ input[type='text']{
   padding: 0.5vw;
   margin-top: 2vh;
   background-color: white;
-  width: 60%;
+  min-width: 60%;
 }
 .regLabel{
   position: relative;
@@ -269,6 +270,13 @@ td{
 .kopHist{
   font-size: 2.5vw;
   position: relative;
+  margin-bottom: 2vh;
   left: 11vw;
   top: 3vw;
+}
+.marginBottom{
+  margin-bottom: 50vh;
+}
+.rechts{
+  left: 35%;
 }
