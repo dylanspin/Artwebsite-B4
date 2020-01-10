@@ -1,0 +1,258 @@
+
+body{
+  margin: 0;
+  width: 100vw;
+  font-family: 'Roboto';
+  overflow-x: hidden;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+.image{
+  height: 100%;
+  width: 100%;
+}
+.blur{
+  filter: blur(0.2vw);
+}
+.underline:hover{
+  text-decoration: underline;
+}
+/*header*/
+.header{
+  position: relative;
+  top: 2vh;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 8vh;
+  background: none;
+  /* background-color: red; */
+}
+.inlogForm{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  width: auto;
+}
+.registrenButton{
+  position: relative;
+  margin-right: 1vw;
+  font-size: 1.5vw;
+  border-radius: 0.2vw;
+  padding: 0.2vw;
+  width: auto;
+  background: none;
+  border:none;
+  color: black;
+  display: inline-block;
+}
+.green{
+  background-color: #37A866;
+  color: white;
+}
+.main{
+  position: relative;
+  top: 5vh;
+  width: 100vw;
+  height: 80vh;
+  z-index: 9;
+}
+.mainText{
+  width: 50%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-shadow: 0.1vw 0.1vw 0.5vw #232323;
+  z-index: 11;
+  text-align: left;
+  color: white;
+  font-size: 4vw;
+}
+
+/*inlog pagina*/
+input[type='text']{
+  background: white;
+}
+.inlogformulier{
+  position: relative;
+  top: 15vw;
+  left: 30%;
+}
+.loginInput{
+  border:0.05vw solid black;
+  border-radius: 0.2vw;
+  display: block;
+  font-size: 2vw;
+  padding: 0.5vw;
+  margin-top: 2vh;
+  background-color: white;
+  width: 40%;
+}
+.inputTag{
+  position: relative;
+  margin-top: 3vh;
+  color: black;
+  display: block;
+  font-size: 1vw;
+}
+.loginbutton{
+  position: relative;
+  top: 4vh;
+  left: 5%;
+  width: 30%;
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  background-color: #111111;
+  border: none;
+  border-radius: 0.2vw;
+  color:white;
+}
+.loginText{
+  position: absolute;
+  top: 30vh;
+  left: 30%;
+  font-size: 3vw;
+  color: black;
+}
+.geenacc{
+  position: relative;
+  font-size: 1vw;
+  color: black;
+  top: 10vh;
+  left: -15%;
+}
+.geenacc:hover{
+  text-decoration: underline;
+}
+.nav{
+  position: relative;
+  width: 50%;
+  left: 5%;
+  top: 20%;
+}
+/*registratie*/
+.registerInput{
+  display: block;
+  border:0.05vw solid black;
+  border-radius: 0.2vw;
+  display: block;
+  font-size: 1vw;
+  padding: 0.5vw;
+  margin-top: 2vh;
+  background-color: white;
+  width: 60%;
+}
+.regLabel{
+  position: relative;
+  bottom: -1vh;
+  font-size: 1.5vw;
+}
+.regForm{
+  position: relative;
+  top: 10vh;
+  left: 5vw;
+}
+.regblock{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 20%;
+  height: 80vh;
+  display: inline-block;
+}
+.rechtsreg{
+  left: 30vw;
+}
+.regButton{
+  position: relative;
+  top: 5vh;
+  left: 3%;
+  width: 60%;
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  background-color: #111111;
+  border: none;
+  border-radius: 0.2vw;
+  color:white;
+}
+.fout{
+  position: relative;
+  top: 0.5%;
+  width: 65%;
+  height: 0.4vh;
+  background-color: red;
+}
+.art{
+  border: none;
+  background: none;
+  height: 25vh;
+  width: 20vw;
+  padding: 0.5vw;
+  transition: 0.3s;
+}
+.art:hover{
+  transform: scale(1.1,1.1);
+}
+.artpieces{
+  position: relative;
+  top: 5vh;
+  left: 2vw;
+  padding:5vw;
+}
+.blackline{
+  position: relative;
+  left: 5%;
+  top: 4vh;
+  width: 90%;
+  background-color: black;
+  height: 0.2vh;
+}
+/*visit*/
+.artvisit{
+  position: relative;
+  left: 50vw;
+  top: 10vh;
+  height: 25vw;
+  height: 25vw;
+}
+.visitText{
+  position: absolute;
+  padding: 1vw;
+  height: 47vh;
+  top: 9vw;
+  left: 5vw;
+  width: 40%;
+  border:0.1vw solid black;
+}
+.infovisit{
+  position: relative;
+  margin-top: 4vh;
+  font-size: 2vw;
+  width: 100%;
+  height: auto;
+}
+.inline{
+  display: inline-block;
+}
+.auctionbutton{
+  position: relative;
+  margin-bottom: 0.2vh;
+  border:0.1vw solid black;
+  border-radius: 0.2vw;
+  display: block;
+  font-size: 2vw;
+  padding: 0.2vw;
+  margin-top: 2vh;
+  background-color: white;
+  min-width: 20%;
+  width: auto;
+  transition: 0.2s;
+}
+.auctionbutton:hover{
+  transform: scale(1.05,1.05);
+}
