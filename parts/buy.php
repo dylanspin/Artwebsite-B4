@@ -23,7 +23,7 @@
         echo "<div class='infovisit'>Price : $".number_format($prijsCurrent, 2, ',', '.')."</div>";
 
         if($_SESSION["wachtwoordCheckArt"] == "true"){
-            if($_SERVER['PHP_SELF'] == '/kunstwerken database/sell.php') {
+            if($_SERVER['PHP_SELF'] == '/kunstwerken database/Art Website B4/sell.php') {
                 if($seller != $gebruikersnaamDB){
                     echo "<form class='' method='post'>
                             <label for='' class='regLabel'>Resell Price</label>

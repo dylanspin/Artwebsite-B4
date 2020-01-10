@@ -4,12 +4,14 @@
 
       $nieuweBalance = $geldDB -= $prijsCurrent;
 
-      $sql = "SELECT bought,seller FROM `b4kunstwerken` WHERE id = '$clickt'";
+      $sql = "SELECT bought,seller,kunstwerk,Prijs FROM `b4kunstwerken` WHERE id = '$clickt'";
       $result = $conn->query($sql);
       if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
               $boughtCheck = $row['bought'];
               $seller = $row['seller'];
+              $naamKunst = $row['kunstwerk'];
+              $prijsKunst = $row['Prijs'];
           }
       }
 
@@ -32,11 +34,19 @@
       if(!$boughtCheck){
           $sql = "UPDATE `b4klant` SET `geld` = '$nieuweBalance',`kunstwerken` = '$compressedColection'  WHERE gebruikersnaam = '$gebruikersnaamDB';";
           if ($conn->query($sql) === true) {
-              $sql = "UPDATE `b4kunstwerken` SET `bought` = '1', `Owner` = '$gebruikersnaamDB' WHERE id = '$clickt';";
+              $sql = "UPDATE `b4kunstwerken` SET `bought` = '1', `seller` = ' ' ,`Owner` = '$gebruikersnaamDB' WHERE id = '$clickt';";
               if ($conn->query($sql) === true) {
                   header('Location: auction.php');
               }
           }
+
+          if(empty($seller)){
+            $seller = "Site";
+          }
+
+          $sql = "INSERT INTO `b4aankoop` (`naamKlant`,`Verkooper`,`kunstwerk`,`Prijs`) VALUES ('$gebruikersnaamDB','$seller','$naamKunst','$prijsKunst');";
+          if ($conn->query($sql) === true) {}
+
           if(!empty($seller)){
               $sql = "SELECT geld FROM `b4klant` WHERE gebruikersnaam = '$seller';";
               $result = $conn->query($sql);

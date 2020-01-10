@@ -3,6 +3,8 @@
   if(isset($_POST['Sell']) && $_SESSION["wachtwoordCheckArt"] = "true"){
 
       $sellPrice = $_POST['price'];
+      $sellPrice =  str_replace(",","",$sellPrice);
+      $sellPrice =  str_replace(".","",$sellPrice);
       $checkOwn = false;
 
       $sql = "SELECT kunstwerken FROM `b4klant` WHERE gebruikersnaam = '$gebruikersnaamDB';";

@@ -25,7 +25,7 @@
       else{
         echo "<form method='post'>
                 <button type='submit' class='registrenButton none underline' name='logout'>Logout</button>
-                <div class='registrenButton none'>$gebruikersnaamDB</div>
+                <a class='registrenButton none underline' href='alldeals.php'>$gebruikersnaamDB</a>
               </form>";
       }
      ?>

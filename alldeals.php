@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Register</title>
+    <title>Transactions</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="javascript/js.js"></script>
@@ -13,8 +13,8 @@
         include 'php/get.php';
         include 'parts/header.php';
         include 'php/logout.php';
-        include 'php/registreren.php';
-        include 'parts/registreer.php';
+        include 'php/visit.php';
+        include 'parts/history.php'; 
      ?>
   </body>
 </html>
